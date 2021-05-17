@@ -6,6 +6,18 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+@font-face {
+  font-family: "Direct_Message_Blocky";
+  src: url("/fonts/Direct_Message_Blocky.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+.pixel-font {
+    font-family: "Direct_Message_Blocky";
+}
+
 a {
   color: inherit;
   text-decoration: none;

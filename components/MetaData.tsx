@@ -35,6 +35,13 @@ export const MetaData: React.FC<MetaDataProps> = ({
             <meta property="twitter:description" content={description} />
             <meta property="twitter:site" content="@sushipetsNFT" />
             <meta property="twitter:card" content="summary" />
+
+            <link
+                rel="preload"
+                href="/fonts/Direct_Message_Blockey.ttf"
+                as="font"
+                crossOrigin=""
+            />
         </Head>
     );
 };

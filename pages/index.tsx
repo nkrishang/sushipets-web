@@ -14,50 +14,52 @@ function Navbar(): JSX.Element {
                 height={50}
             />
 
-            <div className="flex flex-wrap justify-center ml-8 bg-white rounded-2xl shadow-lg px-8 content-center">
+            <div className="flex justify-center ml-8 bg-white rounded-full shadow-lg px-8">
                 
                 <button className="mx-4">
-                    <p className="text-xl text-blue-300 font-semibold">
-                        Play
+                    <p className="text-lg text-blue-300 pixel-font">
+                        PLAY
                     </p>
                 </button>
                 
                 <button className="mx-4">
-                    <p className="text-xl text-blue-300 font-semibold">
-                        Rules
+                    <p className="text-lg text-blue-300 pixel-font">
+                        RULES
                     </p>
                 </button>
 
                 <button className="mx-4">
-                    <p className="text-xl text-blue-300 font-semibold">
-                        Market
+                    <p className="text-lg text-blue-300 pixel-font">
+                        MARKET
                     </p>
                 </button>
 
-                <button className="mx-4 bg-green-400 rounded-full px-8">
-                    <p className="text-xl text-white font-semibold">
-                        Sushidex
+                <button className="mx-4 bg-gradient-to-r from-green-400 to-blue-500 rounded-full px-8">
+                    <p className="text-lg text-white pixel-font">
+                        SUSHIDEX
                     </p>
                 </button>
+                
+                <div className='flex justify-items-center items-center'>
+                    <div className="h-8 w-8 mx-4">
+                        <a href='https://discord.gg/BtknTNfm' target="_blank" rel="noopener noreferrer">
+                            <Image                         
+                                src='/Discord-Logo-Black.svg'
+                                width={200}
+                                height={200}
+                            />
+                        </a>                              
+                    </div>
 
-                <div className="h-8 w-8 mx-4 items-center">
-                    <a href='https://discord.gg/BtknTNfm' target="_blank" rel="noopener noreferrer">
-                        <Image                         
-                            src='/Discord-Logo-Black.svg'
-                            width={200}
-                            height={200}
-                        />
-                    </a>                              
-                </div>
-
-                <div className="h-8 w-8 mx-4">
-                    <a href='https://twitter.com/sushipetsNFT' target="_blank" rel="noopener noreferrer">
-                        <Image                         
-                            src='/Twitter-Logo-Black.svg'
-                            width={200}
-                            height={200}
-                        />
-                    </a>                               
+                    <div className="h-8 w-8 mx-4">
+                        <a href='https://twitter.com/sushipetsNFT' target="_blank" rel="noopener noreferrer">
+                            <Image                         
+                                src='/Twitter-Logo-Black.svg'
+                                width={200}
+                                height={200}
+                            />
+                        </a>                               
+                    </div>
                 </div>
             </div>
         </div>
@@ -81,16 +83,18 @@ export default function LandingPage(): JSX.Element {
             </div>
             <ContentWrapper>
                 <Navbar />
-                <Image 
-                    src='/sushi-loop.gif'
-                    width={800}
-                    height={200}
-                    priority={true}
-                />  
+                <div className='mt-4'>
+                    <Image 
+                        src='/sushi-loop.gif'
+                        width={800}
+                        height={200}
+                        priority={true}
+                    />
+                </div>  
 
-                <button className='bg-blue-500 rounded-3xl border-8 border-white w-1/3 py-4 z-10 mt-28'>            
-                    <p className="text-center text-2xl font-bold text-white">
-                        Join us on Discord 🍣 
+                <button className='bg-blue-500 rounded-full border-8 border-white w-1/2 py-4 z-10 mt-24'>            
+                    <p className="text-center text-xl font-bold text-white pixel-font">
+                        JOIN US ON DISCORD 🍣 
                     </p>
                 </button>                             
             </ContentWrapper>
