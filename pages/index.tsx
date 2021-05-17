@@ -6,7 +6,7 @@ import { ContentWrapper } from '../components/ContentWrapper';
 function Navbar(): JSX.Element {
 
     return (
-        <div className="flex justify-between xl:justify-center my-8 z-10">
+        <div className="flex justify-between xl:justify-center my-8 px-2 z-10">
             <Image 
                 priority={true}
                 src='/sushi_pets_logo.png'
@@ -14,7 +14,7 @@ function Navbar(): JSX.Element {
                 height={50}
             />
 
-            <div className='flex rounded-full shadow-lg mx-4 justify-items-center items-center lg:hidden bg-white'>
+            <div className='flex border border-black rounded-full shadow-lg ml-4 justify-items-center items-center lg:hidden bg-white'>
                     <div className="h-8 w-8 mx-4">
                         <a href='https://discord.gg/BtknTNfm' target="_blank" rel="noopener noreferrer">
                             <Image                         
@@ -99,11 +99,11 @@ export default function LandingPage(): JSX.Element {
                     layout="fill"
                     priority={true}
                 />
-                <Image
+                {/* <Image
                     src="/landing-page/BOTTOM.png"
                     layout="fill"
                     priority={true}
-                />
+                /> */}
             </div>
             <ContentWrapper>
                 <Navbar />
