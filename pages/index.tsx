@@ -1,7 +1,99 @@
 import React from 'react';
+import Image from 'next/image';
+
+import { ContentWrapper } from '../components/ContentWrapper';
+
+function Navbar(): JSX.Element {
+
+    return (
+        <div className="flex justify-center my-8 z-10">
+            <Image 
+                priority={true}
+                src='/sushi_pets_logo.png'
+                width={250}
+                height={50}
+            />
+
+            <div className="flex flex-wrap justify-center ml-8 bg-white rounded-2xl shadow-lg px-8 content-center">
+                
+                <button className="mx-4">
+                    <p className="text-xl text-blue-300 font-semibold">
+                        Play
+                    </p>
+                </button>
+                
+                <button className="mx-4">
+                    <p className="text-xl text-blue-300 font-semibold">
+                        Rules
+                    </p>
+                </button>
+
+                <button className="mx-4">
+                    <p className="text-xl text-blue-300 font-semibold">
+                        Market
+                    </p>
+                </button>
+
+                <button className="mx-4 bg-green-400 rounded-full px-8">
+                    <p className="text-xl text-white font-semibold">
+                        Sushidex
+                    </p>
+                </button>
+
+                <div className="h-8 w-8 mx-4 items-center">
+                    <a href='https://discord.gg/BtknTNfm' target="_blank" rel="noopener noreferrer">
+                        <Image                         
+                            src='/Discord-Logo-Black.svg'
+                            width={200}
+                            height={200}
+                        />
+                    </a>                              
+                </div>
+
+                <div className="h-8 w-8 mx-4">
+                    <a href='https://twitter.com/sushipetsNFT' target="_blank" rel="noopener noreferrer">
+                        <Image                         
+                            src='/Twitter-Logo-Black.svg'
+                            width={200}
+                            height={200}
+                        />
+                    </a>                               
+                </div>
+            </div>
+        </div>
+    )
+}
 
 export default function LandingPage(): JSX.Element {
     return (
-        <></>
+        <div>
+            <div className="flex flex-col max-w-full">
+                <Image
+                    src="/landing-page/BG.png"
+                    layout="fill"
+                    priority={true}
+                />
+                <Image
+                    src="/landing-page/BOTTOM.png"
+                    layout="fill"
+                    priority={true}
+                />
+            </div>
+            <ContentWrapper>
+                <Navbar />
+                <Image 
+                    src='/sushi-loop.gif'
+                    width={800}
+                    height={200}
+                    priority={true}
+                />  
+
+                <button className='bg-blue-500 rounded-3xl border-8 border-white w-1/3 py-4 z-10 mt-28'>            
+                    <p className="text-center text-2xl font-bold text-white">
+                        Join us on Discord 🍣 
+                    </p>
+                </button>                             
+            </ContentWrapper>
+        </div>
     )
 }

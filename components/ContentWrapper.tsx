@@ -1,10 +1,13 @@
 import React from 'react';
-import { Container, PropsOf } from '@chakra-ui/react';
 
-export const ContentWrapper: React.FC<PropsOf<typeof Container>> = ({ children, ...restProps }) => (
-    <Container maxW="calc(1000px + 2rem)" {...restProps}>
-        {children}
-    </Container>
-);
+export function ContentWrapper({children}): JSX.Element {
+    return (
+        <div className='flex justify-center border border-red-600'>
+            <div className='max-w-8xl border border-black flex flex-col items-center'>
+                {children}
+            </div>
+        </div>
+    )
+}
 
 ContentWrapper.displayName = 'ContentWrapper';
