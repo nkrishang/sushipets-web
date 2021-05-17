@@ -66,6 +66,8 @@ function Navbar(): JSX.Element {
     )
 }
 
+Navbar.displayName = 'Navbar';
+
 export default function LandingPage(): JSX.Element {
     return (
         <div>
@@ -101,3 +103,5 @@ export default function LandingPage(): JSX.Element {
         </div>
     )
 }
+
+LandingPage.displayName = 'LandingPage';
